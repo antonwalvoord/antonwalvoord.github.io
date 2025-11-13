@@ -68,9 +68,9 @@
         const maxScroll = document.body.scrollHeight - window.innerHeight;
 
         window.addEventListener('scroll', () => {
-            const progress = window.scrollY / maxScroll; // 0 to 1
-            const x_offset = Math.min(1.5 + progress * -7, 1.5 * 1.7);
-            const y_offset = Math.min(4 + progress * -7, 4 * 1.7);
+            const progress = window.scrollY / -window.innerHeight;
+            const x_offset = Math.min(1.5 + progress * -7, 1.5 * 4);
+            const y_offset = Math.min(4 + progress * -7, 4 * 4);
 
             // Move diagonally as you scroll
             text.style.setProperty('--x', `${x_offset}px`);
@@ -84,7 +84,7 @@
 
 <hr>
 
-<div style="margin-left: 10%; max-width: 600px;">
+<div style="margin: 60px 10%; max-width: 600px;">
     <p>
         this is my paragraph <br>
         This is the next line
