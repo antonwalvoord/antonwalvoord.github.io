@@ -27,6 +27,7 @@ blockquote {
 }
 
 nav {
+    font-family: "Special Gothic Expanded One";
     position: fixed;
     top: 0;
     left: 0;
@@ -40,12 +41,11 @@ ul {
     padding: 0 10%;
     overflow: hidden;
     display: flex;
-    gap: 10px;
+    gap: 25px;
     justify-content: right;
 }
 
 a {
-    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
     color: #ffd8a3;
     font-size: 150%;
 }
