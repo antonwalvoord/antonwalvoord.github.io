@@ -41,7 +41,7 @@ blockquote {
 
 .header-list {
     list-style-type: none;
-    padding: 0 10%;
+    padding: 2vh 10%;
     overflow: hidden;
     display: flex;
     gap: 25px;
@@ -97,7 +97,7 @@ a:hover {
 .flex-container {
     display: flex;
     gap: 10px;
-    margin: 90px 0;
+    margin-top: 90px;
     width: 100%;
 }
 
