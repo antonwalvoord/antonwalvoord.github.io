@@ -1,7 +1,9 @@
-body {
+body, html {
     font-family: 'Playfair Display', 'Times New Roman', Times, serif;
     color: #ffd8a3;
     background-color: #00255b;
+    height: 100%;
+    margin: 0%;
 }
 
 ::selection {
@@ -22,6 +24,7 @@ h2 {
 
 p {
     overflow-wrap: break-word;
+    font-size: 130%;
 }
 
 blockquote {
@@ -29,8 +32,15 @@ blockquote {
     color: white;
 }
 
+.page {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .header {
     font-family: "Special Gothic Expanded One";
+    font-size: 150%;
     position: fixed;
     top: 0;
     left: 0;
@@ -46,6 +56,21 @@ blockquote {
     display: flex;
     gap: 25px;
     justify-content: right;
+}
+
+footer {
+    font-family: "Special Gothic Expanded One";
+    width: 100%;
+    background-color: #0000002f;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 1vh 10%;
+    overflow: hidden;
+    display: flex;
+    gap: 25px;
+    justify-content: left;
 }
 
 .article-list {
@@ -87,7 +112,6 @@ blockquote {
 
 a {
     color: #ffd8a3;
-    font-size: 150%;
 }
 
 a:hover {
@@ -97,7 +121,7 @@ a:hover {
 .flex-container {
     display: flex;
     gap: 10px;
-    margin-top: 90px;
+    margin-top: 15vh;
     width: 100%;
 }
 
