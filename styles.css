@@ -4,11 +4,16 @@ body, html {
     background-color: #00255b;
     height: 100%;
     margin: 0%;
+    scroll-behavior: smooth;
 }
 
 ::selection {
     background-color: #ffd8a3;
     color: #00255b;
+}
+
+:target {
+    scroll-margin-top: 20vh;
 }
 
 h1 {
@@ -74,6 +79,8 @@ footer {
 }
 
 .article-list {
+    position: sticky;
+    top: 20%;
     font-style: italic;
     font-weight: 700;
     list-style-type: circle;
@@ -93,6 +100,32 @@ footer {
 
 .article-list::-webkit-scrollbar-track {
     background: transparent;
+}
+
+.subproject-heading {
+    font-family: "Special Gothic Expanded One";
+    font-size: 100%;
+    margin-left: 40px;
+}
+
+.subproject-heading::before {
+    content: "- ";
+}
+
+.project-button {
+    background: none;
+    display: block;
+    border: none;
+    color: inherit;
+    font-family: "Special Gothic Expanded One";
+    font-size: 110%;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+.project-button.active {
+    background-color: #0000007f;
+    border-radius: 5px;
 }
 
 .article-button {
@@ -127,7 +160,20 @@ a:hover {
 
 .column {
     max-width: 600px;
-    min-width: 0;
+    min-width: 20%;
     margin: 5%;
     flex: 1;
+}
+
+.bio-panel {
+    display: flex;
+    margin: 60px 5%;
+    max-width: 100%;
+    gap: 2%;
+}
+
+.bio-panel img {
+    object-fit: contain;
+    min-width: 200px;
+    max-width: 20%;
 }

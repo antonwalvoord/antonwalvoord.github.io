@@ -14,7 +14,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="/styles.css">
+        <script src="script.js" defer></script>
     </head>
+
+    <body>
 
     <nav class="header">
         <ul class="header-list">
@@ -23,72 +26,116 @@
         </ul>
     </nav>
 
-    <div style="margin: 15vh 10%; max-width: 600px;">
-        <p>
-            this is my paragraph <br>
-            This is the next line
-        </p>
-        <blockquote>
-        > hello I have no serifs!
-        </blockquote>
-        <p>
-            this is my second paragraph this is my second paragraph this is my second paragraph this is my second
-            paragraph
-            this
-            is my second paragraph this is my second paragraph this is my second paragraph this is my second paragraph
-            this
-            is
-            my second paragraph this is my second paragraph this is my second paragraph this is my second paragraph this
-            is
-            my
-            second paragraph this is my second paragraph this is my second paragraph this is my second paragraph this is
-            my
-            second paragraph this is my second paragraph this is my second paragraph this is my second paragraph this is
-            my
-            second paragraph this is my second paragraph update for push
-            this is my second paragraph this is my second paragraph this is my second paragraph this is my second
-            paragraph
-            this
-            is my second paragraph this is my second paragraph this is my second paragraph this is my second paragraph
-            this
-            is
-            my second paragraph this is my second paragraph this is my second paragraph this is my second paragraph this
-            is
-            my
-            second paragraph this is my second paragraph this is my second paragraph this is my second paragraph this is
-            my
-            second paragraph this is my second paragraph this is my second paragraph this is my second paragraph this is
-            my
-            second paragraph this is my second paragraph update for push
-            this is my second paragraph this is my second paragraph this is my second paragraph this is my second
-            paragraph
-            this
-            is my second paragraph this is my second paragraph this is my second paragraph this is my second paragraph
-            this
-            is
-            my second paragraph this is my second paragraph this is my second paragraph this is my second paragraph this
-            is
-            my
-            second paragraph this is my second paragraph this is my second paragraph this is my second paragraph this is
-            my
-            second paragraph this is my second paragraph this is my second paragraph this is my second paragraph this is
-            my
-            second paragraph this is my second paragraph update for push
-            this is my second paragraph this is my second paragraph this is my second paragraph this is my second
-            paragraph
-            this
-            is my second paragraph this is my second paragraph this is my second paragraph this is my second paragraph
-            this
-            is
-            my second paragraph this is my second paragraph this is my second paragraph this is my second paragraph this
-            is
-            my
-            second paragraph this is my second paragraph this is my second paragraph this is my second paragraph this is
-            my
-            second paragraph this is my second paragraph this is my second paragraph this is my second paragraph this is
-            my
-            second paragraph this is my second paragraph update for push
-        </p>
-    </div>
+        <div class="flex-container">
+            <div class="column" style="max-width: 60%">
+                <div id="content">
+                    <h2 id="hardware">Hardware</h2>
+                    <hr>
+                    <h3 id="maze-robot" class="subproject-heading">Maze Robot</h3>
+                    <p>
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                    </p>
+                    <h3 id="sar-adc" class="subproject-heading">SAR ADC</h3>
+                    <p>
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                    </p>
+                    <h3 id="pdm" class="subproject-heading">PDM</h3>
+                    <p>
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                    </p>
 
+                    <h2 id="software">Software</h2>
+                    <hr>
+                    <h3 id="arm-game" class="subproject-heading">ARM Game</h3>
+                    <p>
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                    </p>
+                    <h3 id="blockchain" class="subproject-heading">Blockchain Simulation</h3>
+                    <p>
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                        content content content content content content content 
+                    </p>
+
+                    <h2 id="pm">Project Manager</h2>
+                    <hr>
+
+                </div>
+            </div>
+            <ul class="article-list">
+                <button class="project-button" data-project="hardware">
+                    Hardware
+                </button>
+                <ul>
+                    <button class="project-button" data-project="maze-robot">
+                        Maze Robot
+                    </button>
+                    <button class="project-button" data-project="sar-adc">
+                        SAR ADC
+                    </button>
+                    <button class="project-button" data-project="pdm">
+                        PDM
+                    </button>
+                </ul>
+                <button class="project-button" data-project="software">
+                    Software
+                </button>
+                <ul>
+                    <button class="project-button" data-project="arm-game">
+                        ARM Game
+                    </button>
+                    <button class="project-button" data-project="blockchain">
+                        Blockchain Simulation
+                    </button>
+                </ul>
+                <button class="project-button" data-project="pm">
+                    Project Manager
+                </button>
+            </ul>
+        </div>
+
+    </body>
 </html>
