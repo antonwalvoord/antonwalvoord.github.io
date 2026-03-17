@@ -52,6 +52,7 @@ blockquote {
     width: 100%;
     z-index: 1000;
     background-color: #0000002f;
+    backdrop-filter: blur(3.5px);
 }
 
 .header-list {
