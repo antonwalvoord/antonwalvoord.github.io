@@ -1,0 +1,23 @@
+
+h1 {
+    font-family: "Special Gothic Expanded One";
+    font-style: normal;
+    font-size: 150%;
+}
+
+h2 {
+    font-family: "Special Gothic Expanded One";
+    font-size: 100%;
+    margin-left: 40px;
+}
+
+h2::before {
+    content: "- ";
+}
+
+.md-section {
+    background-color: var(--bg-transparent);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px; /* spacing between sections */
+}
