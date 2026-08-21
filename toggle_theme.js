@@ -3,7 +3,13 @@ const toggleBtn = document.getElementById('theme-toggle');
 
 toggleBtn.addEventListener('click', () => {
   const current = root.getAttribute('data-theme');
-  const next = current === 'dark' ? 'light' : 'dark';
+  if (current === 'dark') {
+    next = 'light';
+  } else if (current === 'light') {
+    next = 'dawn';
+  } else {
+    next = 'dark';
+  }
   root.setAttribute('data-theme', next);
   localStorage.setItem('theme', next);
 });

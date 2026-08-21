@@ -2,26 +2,42 @@
     --bg: #00255b;
     --text: #ffd8a3;
     --link: #ffd8a3;
+    --bg-light: #ffd8a3;
     --bg-transparent: #0000001f;
 }
 
 [data-theme="dark"] {
-    --bg: #00255b;
+    --bg: #031e3a;
     --text: #ffd8a3;
     --link: #ffd8a3;
+    --bg-light: #ffd8a3;
     --bg-transparent: #0000001f;
-    #icon-sun {display: block;}
-    #icon-moon {display: none;}
 }
+[data-theme="dark"] #icon-sun {display: block;}
+[data-theme="dark"] #icon-moon {display: none;}
+[data-theme="dark"] #icon-dawn {display: none;}
 
 [data-theme="light"] {
     --bg: #ffd8a3;
     --text: #00255b;
     --link: #00255b;
+    --bg-light: #6a84aa;
     --bg-transparent: #00000009;
-    #icon-sun {display: none;}
-    #icon-moon {display: block;}
 }
+[data-theme="light"] #icon-sun {display: none;}
+[data-theme="light"] #icon-moon {display: none;}
+[data-theme="light"] #icon-dawn {display: block;}
+
+[data-theme="dawn"] {
+    --bg: #00255b;
+    --text: #ffd8a3;
+    --link: #ffd8a3;
+    --bg-light: #ffd8a3;
+    --bg-transparent: #0000001f;
+}
+[data-theme="dawn"] #icon-sun {display: none;}
+[data-theme="dawn"] #icon-moon {display: block;}
+[data-theme="dawn"] #icon-dawn {display: none;}
 
 body, html {
     font-family: 'Playfair Display', 'Times New Roman', Times, serif;
@@ -45,7 +61,7 @@ body, html {
 h1 {
     font-style: italic;
     font-weight: 900;
-    font-size: 650%;
+    font-size: 450%;
 }
 
 h2 {

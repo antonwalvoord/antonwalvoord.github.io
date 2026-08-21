@@ -2,13 +2,12 @@
 h1 {
     font-family: "Special Gothic Expanded One";
     font-style: normal;
-    font-size: 150%;
+    font-size: 175%;
 }
 
 h2 {
     font-family: "Special Gothic Expanded One";
-    font-size: 100%;
-    margin-left: 40px;
+    font-size: 125%;
 }
 
 h2::before {
@@ -20,4 +19,15 @@ h2::before {
     border-radius: 12px;
     padding: 24px;
     margin-bottom: 24px; /* spacing between sections */
+}
+
+.theme-img {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--bg-light);
+    padding: 0.5%;
+    outline: 2px solid var(--bg-light);
+    outline-offset: 3px;
 }
