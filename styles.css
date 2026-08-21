@@ -4,6 +4,8 @@
     --link: #ffd8a3;
     --bg-light: #ffd8a3;
     --bg-transparent: #0000001f;
+    --code-text: #00255b;
+    --code-bg: #ffd8a3;
 }
 
 [data-theme="dark"] {
@@ -12,9 +14,11 @@
     --link: #ffd8a3;
     --bg-light: #ffd8a3;
     --bg-transparent: #0000001f;
+    --code-text: #031e3a;
+    --code-bg: #ffd8a3;
 }
-[data-theme="dark"] #icon-sun {display: block;}
-[data-theme="dark"] #icon-moon {display: none;}
+[data-theme="dark"] #icon-sun {display: none;}
+[data-theme="dark"] #icon-moon {display: block;}
 [data-theme="dark"] #icon-dawn {display: none;}
 
 [data-theme="light"] {
@@ -23,10 +27,12 @@
     --link: #00255b;
     --bg-light: #6a84aa;
     --bg-transparent: #00000009;
+    --code-text: #ffd8a3;
+    --code-bg: #00255b;
 }
-[data-theme="light"] #icon-sun {display: none;}
+[data-theme="light"] #icon-sun {display: block;}
 [data-theme="light"] #icon-moon {display: none;}
-[data-theme="light"] #icon-dawn {display: block;}
+[data-theme="light"] #icon-dawn {display: none;}
 
 [data-theme="dawn"] {
     --bg: #00255b;
@@ -36,11 +42,11 @@
     --bg-transparent: #0000001f;
 }
 [data-theme="dawn"] #icon-sun {display: none;}
-[data-theme="dawn"] #icon-moon {display: block;}
-[data-theme="dawn"] #icon-dawn {display: none;}
+[data-theme="dawn"] #icon-moon {display: none;}
+[data-theme="dawn"] #icon-dawn {display: block;}
 
 body, html {
-    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--text);
     background-color: var(--bg);
     height: 100%;
@@ -59,6 +65,7 @@ body, html {
 }
 
 h1 {
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: 900;
     font-size: 450%;
@@ -67,6 +74,10 @@ h1 {
 h2 {
     font-family: "Special Gothic Expanded One";
     font-size: 150%;
+}
+
+h3 {
+    font-family: "Special Gothic Expanded One";
 }
 
 p {
@@ -132,6 +143,7 @@ footer {
     padding: 10px 25px;
     margin: 10vh 5vw;
     max-height: 50vh;
+    max-width: 20%;
     width: fit-content;
     height: fit-content;
     flex: none;

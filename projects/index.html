@@ -102,6 +102,10 @@
                             return `<img src="${href}" alt="${text}" class="theme-img" loading="lazy">`;
                         };
 
+                        renderer.codespan = (code) => {
+                            return `<code class="inline-code">${code}</code>`;
+                        };
+
                         Promise.all(
                             md_files.map(file => fetch("content/"+file)
                                 .then(res => res.text()))
