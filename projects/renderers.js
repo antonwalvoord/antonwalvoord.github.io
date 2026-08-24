@@ -3,11 +3,6 @@
 const md_files = [
     "100-hardware-firmware.md",
     "101-maze-robot.md",
-    "102-sar-adc.md",
-    "103-pdm.md",
-    "200-software.md",
-    "201-arm-game.md",
-    "202-blockchain.md",
 ]
 
 const VIDEO_EXTENSIONS = /\.(mp4|webm)(\?.*)?$/i;
