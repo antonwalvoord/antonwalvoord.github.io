@@ -85,11 +85,6 @@ p {
     font-size: 130%;
 }
 
-blockquote {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-}
-
 .page {
     min-height: 100%;
     display: flex;
@@ -221,6 +216,13 @@ a:hover {
     object-fit: contain;
     min-width: 200px;
     max-width: 20%;
+}
+
+.bio-panel img.potd-image {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    min-width: 0;
 }
 
 #theme-toggle {
