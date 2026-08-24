@@ -19,6 +19,7 @@
         <script src="project_buttons.js" defer></script>
         <script src="../toggle_theme.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/11.1.1/marked.min.js"></script>
+        <script src="renderers.js"></script>
     </head>
 
     <body>
@@ -66,60 +67,7 @@
         <div class="flex-container">
             <div class="column" style="max-width: 70%">
                 <div id="content">
-
-                    <script>
-                        // Files to render
-                        const md_files = [
-                            "100-hardware-firmware.md",
-                            "101-maze-robot.md",
-                            "102-sar-adc.md",
-                            "103-pdm.md",
-                            "200-software.md",
-                            "201-arm-game.md",
-                            "202-blockchain.md",
-                        ]
-
-                        function slugify(text) {
-                            return text
-                                .toLowerCase()
-                                .trim()
-                                .replace(/\//g, '-')   // "/" -> dashes
-                                .replace(/[^\w\s-]/g, '')   // strip punctuation
-                                .replace(/\s+/g, '-');     // spaces -> dashes
-                        }
-
-                        const renderer = new marked.Renderer();
-                        renderer.heading = function (text, level) {
-                            const id = slugify(text);
-                            return `<h${level} id="${id}">${text}</h${level}>\n`;
-                        };
-
-                        renderer.link = function (href, title, text) {
-                            return `<a href="${href}" target="_blank" rel="noopener noreferrer"${title ? ` title="${title}"` : ''}>${text}</a>`;
-                        };
-
-                        renderer.image = (href, title, text) => {
-                            return `<img src="${href}" alt="${text}" class="theme-img" loading="lazy">`;
-                        };
-
-                        renderer.codespan = (code) => {
-                            return `<code class="inline-code">${code}</code>`;
-                        };
-
-                        Promise.all(
-                            md_files.map(file => fetch("content/"+file)
-                                .then(res => res.text()))
-                        ).then(md_contents => {
-                        md_contents.forEach((md, i) => {
-                            const section = document.createElement('div');
-                            section.className = 'md-section';
-                            section.dataset.source = "content/"+md_files[i];
-                            section.innerHTML = marked.parse(md, { renderer });
-                            document.getElementById('content').appendChild(section);
-                            });
-                        });
-                    </script>
-
+                    <!-- MD CONTENT RENDERS HERE -->
                 </div>
             </div>
             <ul class="article-list">

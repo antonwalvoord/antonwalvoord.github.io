@@ -21,7 +21,18 @@ h2::before {
     margin-bottom: 24px; /* spacing between sections */
 }
 
-.theme-img {
+.project-img {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--bg-light);
+    padding: 0.5%;
+    outline: 2px solid var(--bg-light);
+    outline-offset: 3px;
+}
+
+.project-video {
     display: block;
     max-width: 500px;
     width: 100%;
